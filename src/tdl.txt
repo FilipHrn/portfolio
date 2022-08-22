@@ -1,0 +1,22 @@
+// MAIN GOALS
+- Mobile Design
+- Desktop Design
+- Responsive Check / Fix
+- Refactor
+- Bugs
+
+
+
+// NOTES
+- Image
+- Projects
+- About
+- Edu
+- Work Exp
+
+- DRY
+- KISS
+- CLEAN
+
+// NEXT TIME
+- Fix the image round style / crop the top and bottom
