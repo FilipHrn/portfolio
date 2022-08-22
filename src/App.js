@@ -7,31 +7,46 @@ import {
   Link
 } from "react-router-dom";
 
+import selfie from './images/picture-of-me.jpg';
+import Image from 'react-bootstrap/Image';
+import Button from 'react-bootstrap/Button'
 
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import About from './components/About';
+import Education from './components/Education';
+import WorkExp from './components/WorkExp';
+
+// import Container from 'react-bootstrap/Container';
+// import Nav from 'react-bootstrap/Nav';
+// import Navbar from 'react-bootstrap/Navbar';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function App() {
   return (
     <Router>
       <div>
+        <Image src={selfie} fluid />
+        <Button>Projects</Button>
+        
         <nav>
           <ul>
             <li>
-              <Link to="/"></Link>
+              <Link to="/">About</Link>
             </li>
 
             <li>
-              <Link to="/"></Link>
+              <Link to="/education">Education</Link>
+            </li>
+
+            <li>
+              <Link to="/work-experience">Work Experience</Link>
             </li>
           </ul>
         </nav>
 
         <Routes>
-          <Route path="/" element={}  />
-          <Route path="/" element={} />
+          <Route path="/" element={ <About /> }  />
+          <Route path="/education" element={ <Education /> } />
+          <Route path="/work-experience" element={ <WorkExp /> } />
         </Routes>
 
       </div>
