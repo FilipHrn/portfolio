@@ -1,8 +1,12 @@
+import { motion } from 'framer-motion';
 
 function Education() {
-
   return(
-    <>
+    <motion.div
+      initial={{ opactity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <ul>
         <li>
           <ul>
@@ -28,7 +32,7 @@ function Education() {
           </ul>
         </li>
       </ul>
-    </>
+    </motion.div>
   )
 }
 

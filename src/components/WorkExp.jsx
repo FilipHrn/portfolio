@@ -1,8 +1,12 @@
+import { motion } from 'framer-motion';
 
 function WorkExp () {
-
   return(
-    <>
+    <motion.div
+      initial={{ opactity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <ul>
         <li>
           <ul>
@@ -65,7 +69,7 @@ function WorkExp () {
           </ul>
         </li>
       </ul>
-    </>
+    </motion.div>
   )
 }
 
