@@ -5,8 +5,6 @@
 - Refactor
 - Bugs
 
-
-
 // NOTES
 - Image
 - Projects
@@ -20,3 +18,5 @@
 
 // NEXT TIME
 - Fix the image round style / crop the top and bottom
+- Style the nav "blocks"
+- Style the reading components
